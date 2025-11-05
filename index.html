@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>「제주에서 강화까지 해안길 따라 이천리...」 이상구 사진전 | QR 미니 갤러리</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0c; --fg:#efefef; --muted:#bdbdbd; --card:#141417; --line:#2b2b2f;
+      --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans KR",system-ui,AppleSDGothicNeo,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .wrap{max-width:1060px;margin:0 auto;padding:28px 18px 60px}
+    header{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;margin:10px 0 24px}
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .title h1{margin:0 0 6px;font-size:28px;font-weight:800;letter-spacing:-.3px}
+    .title p{margin:0;color:var(--muted);font-size:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .profile{padding:16px 18px;margin-bottom:16px}
+    .profile h2{margin:0 0 8px;font-size:16px;font-weight:700}
+    .profile ul{margin:0;padding-left:18px;color:#d6d6d6;line-height:1.6}
+    .audio{margin:14px 0 24px;display:flex;align-items:center;gap:10px}
+    .audio button{background:#1f2937;color:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:600;cursor:pointer}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    @media(min-width:980px){.grid{grid-template-columns:repeat(4,1fr)}}
+    figure{margin:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#0f0f12;display:flex;flex-direction:column}
+    .ph{position:relative;aspect-ratio:4/3;background:#0f0f12}
+    .ph img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.02)}
+    figcaption{padding:10px 12px;font-size:14px;text-align:center;color:#e9e9e9;border-top:1px solid var(--line)}
+    footer{margin:30px 0 0;color:var(--muted);font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="images/%EB%B9%9B%EC%9D%98%20%ED%9D%90%EB%A6%84.jpg" alt="작가 프로필 사진">
+      <div class="title">
+        <h1>「제주에서 강화까지 해안길 따라 이천리...」 이상구 사진전</h1>
+        <p>QR 미니 갤러리 · 사진 16장 · 각 사진 아래 제목만 표기</p>
+        <div class="audio">
+          <audio id="bgm" preload="auto" src="https://cdn.pixabay.com/download/audio/2023/05/23/audio_9e2ab0b2e8.mp3?filename=quietness-146444.mp3"></audio>
+          <button id="playbtn" type="button">음악 재생</button>
+          <small>모바일에서는 한 번 눌러야 재생됩니다.</small>
+        </div>
+      </div>
+    </header>
+
+    <section class="card profile">
+      <h2>작가 프로필</h2>
+      <ul>
+        <li>한국사진작가협회 회원</li>
+        <li>물보라 포토 아카데미 현 회장</li>
+        <li>국제신문 사진 동우회 회원</li>
+        <li>사단법인 노동문화예술협회 초대작가</li>
+        <li>서울일보 초대작가</li>
+      </ul>
+    </section>
+
+    <section class="grid" id="gallery">
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EB%B9%9B%EC%9D%98%20%ED%9D%90%EB%A6%84.jpg" alt="빛의 흐름.jpg"></div>
+        <figcaption>빛의 흐름.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EA%B0%AF%EA%B3%A8%EC%9D%98%20%EC%95%88%EA%B0%9C.jpg" alt="갯골의 안개.jpg"></div>
+        <figcaption>갯골의 안개.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EA%B4%91%EC%B9%98%EA%B8%B0%ED%95%B4%EB%B3%80.jpg" alt="광치기해변.jpg"></div>
+        <figcaption>광치기해변.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EB%8D%B0%ED%81%AC.jpg" alt="데크.jpg"></div>
+        <figcaption>데크.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EB%8F%99%EB%AC%B4%EB%93%A4.jpg" alt="동무들.jpg"></div>
+        <figcaption>동무들.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EB%B9%9B%EA%B7%B8%EB%A6%BC%EC%9E%90%27.jpg" alt="빛그림자'.jpg"></div>
+        <figcaption>빛그림자'.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%A3%BD%EC%84%B1%EC%84%B1%EB%8B%B9.jpg" alt="죽성성당.jpg"></div>
+        <figcaption>죽성성당.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%ED%95%A8%EA%BB%98%ED%95%9C%EC%84%B8%EC%9B%94.jpg" alt="함께한세월.jpg"></div>
+        <figcaption>함께한세월.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%ED%98%91%EA%B3%A1%EC%9D%98%EC%95%88%EA%B0%9C.jpg" alt="협곡의안개.jpg"></div>
+        <figcaption>협곡의안개.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%ED%9D%94%EC%A0%81.jpg" alt="흔적.jpg"></div>
+        <figcaption>흔적.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%89%BC%EC%89%AC%EB%8A%94%20%EC%8B%9C%EA%B0%84.jpg" alt="쉼쉬는 시간.jpg"></div>
+        <figcaption>쉼쉬는 시간.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%8A%A4%ED%83%A0%EB%B0%94%EC%9D%B4.jpg" alt="스탠바이.jpg"></div>
+        <figcaption>스탠바이.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%8B%A4%EC%B9%98%EC%9E%A1%EC%9D%B4.jpg" alt="실치잡이.jpg"></div>
+        <figcaption>실치잡이.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%98%81%EB%8D%95.jpg" alt="영덕.jpg"></div>
+        <figcaption>영덕.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0%EC%A1%B4%EC%9E%AC.jpg" alt="잃어버린존재.jpg"></div>
+        <figcaption>잃어버린존재.jpg</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img loading="lazy" src="images/%EC%9E%8A%ED%9E%8C%20%EB%AC%BC%EC%9D%98%20%EC%9E%90%EB%A6%AC.jpg" alt="잊힌 물의 자리.jpg"></div>
+        <figcaption>잊힌 물의 자리.jpg</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> 이상구. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const bgm = document.getElementById('bgm');
+    const btn = document.getElementById('playbtn');
+    btn.addEventListener('click', async () => {
+      try{ if(bgm.paused){ await bgm.play(); btn.textContent='음악 일시정지'; } else { bgm.pause(); btn.textContent='음악 재생'; } }
+      catch(e){ alert('자동재생이 제한되어 한 번 더 눌러주세요.'); }
+    });
+    // iOS/Android 첫 터치 시 재생 허용
+    window.addEventListener('touchstart', ()=>{ if(bgm.paused) bgm.play().catch(()=>{}); }, {once:true});
+  </script>
+</body>
+</html>
